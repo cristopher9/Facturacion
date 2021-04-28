@@ -164,45 +164,51 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="javascript:void(0)" onclick="AbrirConsultaFactura()" class="nav-link">
+                <a href="javascript:void(0)" onclick="AbrirRegistroCliente()" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Clientes</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="javascript:void(0)" onclick="AbrirRegistroBoleta()" class="nav-link">
+                <a href="javascript:void(0)" onclick="AbrirRegistroProducto()" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Productos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="javascript:void(0)" onclick="AbrirRegistroNotaCredito()" class="nav-link">
+                <a href="javascript:void(0)" onclick="AbrirRegistroCobranza()" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cobranza</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="javascript:void(0)" onclick="AbrirRegistroNotaDebito()" class="nav-link">
+                <a href="javascript:void(0)" onclick="AbrirRegistroFormaPago()" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Forma de Pago</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="javascript:void(0)" onclick="AbrirRegistroResumenBoletas()" class="nav-link">
+                <a href="javascript:void(0)" onclick="AbrirRegistroUnidadMedida()" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Unidad de Medida</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="javascript:void(0)" onclick="AbrirRegistroBajaFacturas()" class="nav-link">
+                <a href="javascript:void(0)" onclick="AbrirRegistroTipoExistencia()" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tipo Existencia</p>
+                  <p>Tipo de Existencia</p>
                 </a>
               </li>
                 <li class="nav-item">
-                <a href="javascript:void(0)" onclick="AbrirRegistroBajaFacturas()" class="nav-link">
+                <a href="javascript:void(0)" onclick="AbrirRegistroUsuario()" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Usuario</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" onclick="AbrirRegistroTipoDocumento()" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tipo de Documento</p>
                 </a>
               </li>
             </ul>
@@ -213,16 +219,86 @@ to get the desired effect
     <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-   
-
     <section class="content sidebar-mini text-sm">
       <div class="container-fluid">
-        <div class="row" id="contenido_sistema">
-          
-        </div>
-      </div>
+					<div id="contenido_sistema">
+					  <h5 class="mb-2">Resumen de Resultados</h5>
+						<div class="row">
+							<div class="col-lg-3 col-6">
+								<!-- small card -->
+								<div class="small-box bg-info">
+									<div class="inner">
+										<h3>150</h3>
+
+										<p>New Orders</p>
+									</div>
+									<div class="icon">
+										<i class="fas fa-shopping-cart"></i>
+									</div>
+									<a href="#" class="small-box-footer"> More info <i
+										class="fas fa-arrow-circle-right"></i>
+									</a>
+								</div>
+							</div>
+							<!-- ./col -->
+							<div class="col-lg-3 col-6">
+								<!-- small card -->
+								<div class="small-box bg-success">
+									<div class="inner">
+										<h3>
+											53<sup style="font-size: 20px">%</sup>
+										</h3>
+
+										<p>Bounce Rate</p>
+									</div>
+									<div class="icon">
+										<i class="ion ion-stats-bars"></i>
+									</div>
+									<a href="#" class="small-box-footer"> More info <i
+										class="fas fa-arrow-circle-right"></i>
+									</a>
+								</div>
+							</div>
+							<!-- ./col -->
+							<div class="col-lg-3 col-6">
+								<!-- small card -->
+								<div class="small-box bg-warning">
+									<div class="inner">
+										<h3>44</h3>
+
+										<p>User Registrations</p>
+									</div>
+									<div class="icon">
+										<i class="fas fa-user-plus"></i>
+									</div>
+									<a href="#" class="small-box-footer"> More info <i
+										class="fas fa-arrow-circle-right"></i>
+									</a>
+								</div>
+							</div>
+							<!-- ./col -->
+							<div class="col-lg-3 col-6">
+								<!-- small card -->
+								<div class="small-box bg-danger">
+									<div class="inner">
+										<h3>65</h3>
+
+										<p>Unique Visitors</p>
+									</div>
+									<div class="icon">
+										<i class="fas fa-chart-pie"></i>
+									</div>
+									<a href="#" class="small-box-footer"> More info <i
+										class="fas fa-arrow-circle-right"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
     </section>
 
   </div>
@@ -293,7 +369,7 @@ to get the desired effect
   function AbrirRegistroNotaCredito(){
       $.ajax({
           method: "POST",
-          url: 'formularios/nota_credito.php',
+          url: 'vistas/notaCredito.jsp',
           data: {
               "id":"23"
             }
@@ -306,9 +382,9 @@ to get the desired effect
   function AbrirRegistroNotaDebito(){
       $.ajax({
           method: "POST",
-          url: 'formularios/nota_debito.php',
+          url: 'vistas/notaDebito.jsp',
           data: {
-              "id":"23"
+              "id":"25"
             }
       })
       .done(function( text ) {
@@ -319,7 +395,7 @@ to get the desired effect
   function AbrirRegistroResumenBoletas(){
       $.ajax({
           method: "POST",
-          url: 'formularios/envio_resumen.php',
+          url: 'vistas/envio_resumen.php',
           data: {
               "id":"23"
             }
@@ -332,7 +408,111 @@ to get the desired effect
   function AbrirRegistroBajaFacturas(){
       $.ajax({
           method: "POST",
-          url: 'formularios/envio_bajas.php',
+          url: 'vistas/envio_bajas.php',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroCliente(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/clientes.jsp',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroProducto(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/producto.jsp',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroCobranza(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/cobranza.jsp',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroFormaPago(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/formaPago.jsp',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroUnidadMedida(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/unidadMedida.jsp',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroTipoExistencia(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/tipoExistencia.jsp',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroUsuario(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/usuario.jsp',
+          data: {
+              "id":"23"
+            }
+      })
+      .done(function( text ) {
+           $('#contenido_sistema').html(text);
+      });    
+  }
+  
+  function AbrirRegistroTipoDocumento(){
+      $.ajax({
+          method: "POST",
+          url: 'vistas/tipoDocumento.jsp',
           data: {
               "id":"23"
             }

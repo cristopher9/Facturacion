@@ -5,20 +5,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<style type="text/css">
-
-#customers th {
-  background-color: #212c60;
-  color: white;
-}
-</style>
 </head>
 <body>
-
-	<form class="container-fluid">
+<form class="container-fluid">
     	 <div class="card" style="width: auto; width: auto; margin-top:5px; padding-top: 5px;padding-left: 5px;padding-right: 5px;padding-bottom: 5px;">
 			<div class="row col-sm-12" style="padding-bottom: 5px;">	
-			    	 <h5>Filtros de consulta - Boleta Electrónica</h5>
+			    	 <h5>Filtros de consulta - Nota De Debito</h5>
 			</div>
 		<div class="row">
 			<div class="col-sm-1">
@@ -41,40 +33,12 @@
 				<input type="text" id="rg-to" name="rg-to" value="" class="form-control">
 			</div>
 		</div>
-
-		<div class="row">
-			<div class="col-sm-1">
-				<label class="font-weight-normal">Tipo de Cobranza: </label>
-			</div>
-			<div class="col-sm-3">
-              <select class="form-control">
-                <option>SELECCIONE</option>
-                <option>CANCELADO</option>
-                <option>PENDIENTE</option>
-             </select>
-            </div>
-			<div class="col-sm-1">
-				<label class="font-weight-normal">Fecha de Vencimiento:</label>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" type="date" value="2011-08-19"
-					id="example-date-input">
-			</div>
-			<div class="col-sm-1">
-				<label class="font-weight-normal">Razon Social:</label>
-			</div>
-			<div class="col-sm-3">
-				<input type="text" id="rg-to" name="rg-to" value=""
-					class="form-control">
-			</div>
-		</div>
 		<div style="text-align: right; padding-bottom: 15px; padding-top: 15px;">
-<!-- 			<button type="submit" class="btn btn-primary btn-lg active">Buscar</button> -->
 			<button type="button" class="btn btn-primary">Buscar</button>
 		</div>
 		</div>
 		<div  style="text-align: left; padding-bottom: 15px;">
-		<button type="submit" class="btn btn-success" id="#AbrirRegistroFactura"><i class="fa fa-plus"></i> Registrar Boleta</button>
+		<button type="submit" class="btn btn-success" id="#AbrirRegistroFactura"><i class="fa fa-plus"></i>Registrar Nota De Debito</button>
 		</div>
 
 	</form>
@@ -173,6 +137,5 @@ function AbrirRegistroFactura(){
 
 
 </script>
-	
 </body>
 </html>

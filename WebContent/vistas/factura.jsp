@@ -19,11 +19,9 @@
 
 	<form class="container-fluid">
     	 <div class="card" style="width: auto; width: auto; margin-top:5px; padding-top: 5px;padding-left: 5px;padding-right: 5px;padding-bottom: 5px;">
-<!-- 			<fieldset style="border:1px solid #000000; width: auto;"> -->
-			<div class="row col-sm-12">	
-			    	 <h5>Filtros de consulta - Factura</h5>
+			<div class="row col-sm-12" style="padding-bottom: 5px;">	
+			    	 <h5>Filtros de consulta - Factura Electrónica</h5>
 			</div>
-
 		<div class="row">
 			<div class="col-sm-1">
 				 <label class="font-weight-normal">Codigo de Factura: </label>
@@ -48,14 +46,17 @@
 
 		<div class="row">
 			<div class="col-sm-1">
-				<label class="font-weight-normal">Fecha de Inicio: </label>
+				<label class="font-weight-normal">Tipo de Cobranza: </label>
 			</div>
 			<div class="col-sm-3">
-				<input class="form-control" type="date" value="2011-08-19"
-					id="example-date-input">
-			</div>
+              <select class="form-control">
+                <option>SELECCIONE</option>
+                <option>CANCELADO</option>
+                <option>PENDIENTE</option>
+             </select>
+            </div>
 			<div class="col-sm-1">
-				<label class="font-weight-normal">Fecha de Fin:</label>
+				<label class="font-weight-normal">Fecha de Vencimiento:</label>
 			</div>
 			<div class="col-sm-3">
 				<input class="form-control" type="date" value="2011-08-19"
@@ -70,7 +71,6 @@
 			</div>
 		</div>
 		<div style="text-align: right; padding-bottom: 15px; padding-top: 15px;">
-<!-- 			<button type="submit" class="btn btn-primary btn-lg active">Buscar</button> -->
 			<button type="button" class="btn btn-primary">Buscar</button>
 		</div>
 		</div>
@@ -138,7 +138,7 @@
 				<td style="text-align: center;">PEN</td>
 				<td>20602364515</td>
 				<td>SEGURO CLEAN AND FACILITY SERVICES S.A.</td>
-			<td></td>
+				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -147,40 +147,15 @@
 	</table>
 	
 </div>	
-<div class="row">
-	<div class="col-sm-12 col-md-5">
-			<div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
-	</div>
-<div class="col-sm-12 col-md-7">
-<div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
-<ul class="pagination">
-<li class="paginate_button page-item previous disabled" id="example1_previous">
- 	<a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
-	<li class="paginate_button page-item active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
-	<li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
-	<li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
-	<li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
-	<li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
-	<li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
-	<li class="paginate_button page-item next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-</li></ul></div></div></div>
-	
-	
-		
-		
-		<!-- jQuery -->
-<%-- <script src="${pageContext.request.contextPath}/recursos/plugins/jquery/jquery.min.js"></script> --%>
-<!-- Bootstrap -->
-<%-- <script src="${pageContext.request.contextPath}/recursos/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> --%>
-<!-- AdminLTE -->
-<%-- <script src="${pageContext.request.contextPath}/recursos/dist/js/adminlte.js"></script> --%>
-
-<!-- OPTIONAL SCRIPTS -->
-<%-- <script src="${pageContext.request.contextPath}/recursos/plugins/chart.js/Chart.min.js"></script> --%>
-<%-- <script src="${pageContext.request.contextPath}/recursos/dist/js/demo.js"></script> --%>
-<%-- <script src="${pageContext.request.contextPath}/recursos/dist/js/pages/dashboard3.js"></script> --%>
-
-
+<!-- <nav aria-label="Page navigation example"> -->
+<!--   <ul class="pagination justify-content-end"> -->
+<!--     <li class="page-item"><a class="page-link" href="#">Previous</a></li> -->
+<!--     <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+<!--     <li class="page-item"><a class="page-link" href="#">2</a></li> -->
+<!--     <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+<!--     <li class="page-item"><a class="page-link" href="#">Next</a></li> -->
+<!--   </ul> -->
+<!-- </nav>	 -->
 <script type="text/javascript">
 
 function AbrirRegistroFactura(){

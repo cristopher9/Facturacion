@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>XIOMI NO ME AYUDA</h2>
+	<h2>REGISTRAR FACTURA</h2>
 </body>
 </html>
